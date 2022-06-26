@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(157, 157, 157);
+    transition: 1s all;
+}
+
+.container {
+    width: 60%;
+    height: 100%;
+    margin: 20px auto;
+    border: 8px dashed rgb(78, 75, 75);
+    padding: 2rem;
+}
+
+.workTable {
+    width: 100%;
+    height: 100px;
+    border: 1px dashed rgb(41, 41, 41);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+
+}
+
+.input {
+    border-radius: 10px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid rgb(237, 237, 237);
+}
+
+.btn {
+    background-color: rgb(150, 150, 150);
+    width: 40px;
+    color: #ffffffff;
+}
+
+.btn:active {
+    color: gold;
+    background-color: rgb(142, 128, 126);
+}
+
+
+
+.dispalayDiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px dashed rgb(10, 0, 0);
+    margin: 36px 0 0 0;
+}
+
+.headerDiv {
+    margin: 10px 0;
+    padding: 5px;
+
+}
+
+.itemDivRemove {
+    border: 1px solid gray;
+
+}
+
+.forRemove {
+    display: none;
+}
+
+.dispalayDiv h1 {
+    margin: 10px;
+    color: #ffffffff;
+
+}
+
+.allItems {
+    flex-direction: column;
+    align-items: center;
+}
+
+.envelopDiv {
+    position: relative;
+}
+
+.accepted {
+    opacity: 0.5;
+}
+
+
+.forAbs {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+
+}
+
+.chekedClass {
+    opacity: 0.4;
+}
+
+
+.changed {
+    opacity: 1;
+
+}
+
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 750px) {
+    body {
+        background-color: rgb(117, 168, 185);
+    }
+
+    .input {
+        border-radius: 5px;
+        height: 20px;
+        font-size: 10px;
+        text-align: center;
+        border: 1px solid rgb(237, 237, 237);
+    }
+
+    .envelopDiv {
+        width: 50px;
+    }
+
+    .lineH1 {
+        font-size: 20px;
+    }
+
+    .item {
+        top: 50%;
+        left: 12%;
+    }
+
+    .chekedClass {
+        width: 20px;
+        height: 20px;
+    }
+
+    .removeClass {
+        width: 20px;
+        height: 20px;
+
+    }
+}
